@@ -1,0 +1,360 @@
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+img {
+    max-width: 150%;
+    height: 100%;
+
+}
+.image-button {
+    position: absolute;
+    bottom: 80px; 
+    left: 50%; 
+    transform: translateX(-60%); 
+    background-color: #0c8b14;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.image-button:hover {
+    background-color: #3aa320;
+}
+.image-title {
+    height: 40%;
+    position:absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        color: #0fca1c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+    
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Grand Hotel', cursive ;
+}
+
+.image-container:hover .image-title {
+    opacity: 4;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #80808057;
+    color: #0c8b14;
+     
+}
+.banner .icon{
+    transform: translateY(-5px); 
+}
+.icon {
+    font-size: 35px;
+    margin-right: 210px;
+    color: green;
+
+}
+.icon-container {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s; 
+}
+
+.icon-container img {
+    width: 100px; 
+}
+
+.icon-container:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #e8f319; 
+}
+.text p {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.animated-title {
+    position: absolute;
+    left: 100%;
+    animation: slide-from-right 1.5s ease-in-out forwards;
+}
+
+.center {
+    overflow: hidden;
+}
+
+@keyframes slide-from-right {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+.card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #0fca1c;
+}
+h3{
+    color: black;
+}
+
+p {
+    font-size: 16px;
+    color: #777;
+}
+
+button {
+    background-color: #0fa340;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #43b723;
+}
+.card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.left-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+}
+p2{
+    color: #0fa340;
+}
+.image {
+    display:inline-block;
+  vertical-align: top;
+        margin-right: 20px;
+}
+.img:last-child{
+    margin-right: 0;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+h2, h3{
+    text-align: center;
+}
+h2{
+    color: #0fca1c;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.card:hover {
+    transform: translateY(-5px); 
+}
+@media screen and (min-width: 500px) 
+{
+    body
+    {
+        background-color: white;
+    }
+    article
+    {
+        display: inline-block;
+        width: 49%;
+    }
+}
+@media screen and (min-width: 900px) 
+{
+    body
+    {
+        background-color: white;
+    }
+    article
+    {
+        width: 32%;
+    }
+}
+.form-container {
+    display: flex;
+    justify-content: space-between; /* Espace équitable entre les éléments */
+    max-width: 800px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1; 
+    padding: 20px;
+       border-radius: 5px;
+}
+
+.contact-info h2, .contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #037324;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #169c4e;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.fab {
+    font-size: 24px;
+}
+
+.your-name {
+    color: #15642d; 
+}
+
+.copyright {
+    font-size: 14px;
+}
+@media screen and (min-width: 500px) 
+{
+    body
+    {
+        background-color: lightgreen;
+    }
+    article
+    {
+        display: inline-block;
+        width: 49%;
+    }
+}
+@media screen and (min-width: 900px) 
+{
+    body
+    {
+        background-color: rgb(3, 102, 37);
+    }
+    article
+    {
+        width: 32%;
+    }
+}
+
+
+
+
